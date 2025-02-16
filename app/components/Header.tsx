@@ -8,7 +8,7 @@ export default function Header() {
         <Link href="/" className="text-2xl font-bold text-amber-600">
           FoodieDelight
         </Link>
-        <nav className="hidden md:flex space-x-6">
+        <nav className="flex space-x-6">
         <Link href="/" className="text-gray-600 hover:text-amber-600">
             Home
           </Link>
@@ -22,7 +22,7 @@ export default function Header() {
             Contact
           </Link>
         </nav>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-6">
           <Search className="h-6 w-6 text-gray-400 cursor-pointer" />
           <Menu className="h-6 w-6 text-gray-400 cursor-pointer md:hidden" />
         </div>

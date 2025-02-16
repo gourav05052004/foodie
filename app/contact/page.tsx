@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-amber-50 py-12">
+    <div className="min-h-screen bg-amber-100 py-12">
       <div className="container mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-12">

@@ -39,7 +39,7 @@ export default function Home() {
       <main>
         <section className="relative h-[70vh] flex items-center justify-center bg-amber-200">
           <div className="relative z-10 text-center text-gray-800">
-            <h1 className="text-5xl font-bold mb-4">Discover Culinary Delights</h1>
+            <h1 className="text-6xl font-bold mb-4">Discover Culinary Delights</h1>
             <p className="text-xl mb-8">Explore our collection of mouthwatering recipes</p>
             <Link
               href="/recipes"

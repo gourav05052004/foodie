@@ -117,7 +117,7 @@ export default function About() {
             Be part of our growing family of food enthusiasts and share your culinary journey with us.
           </p>
           <Link
-            href="/contact"
+            href="/recipes"
             className="inline-block bg-amber-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-amber-700 transition duration-300"
           >
             Get Started

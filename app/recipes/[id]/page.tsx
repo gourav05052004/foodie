@@ -4,7 +4,7 @@ import { Clock, Users, ChefHat, Utensils } from "lucide-react"
 
 // This would typically come from a database
 const recipeDetails = {
-  1: {
+  "1": {
     title: "Homemade Margherita Pizza",
     description: "Classic Italian pizza with fresh basil, mozzarella, and tomatoes",
     time: "30 mins",
@@ -52,7 +52,7 @@ const recipeDetails = {
       "Preheat your oven thoroughly"
     ]
   },
-  2: {
+  "2": {
     title: "Butter Chicken",
     description: "Rich and creamy chicken curry with a blend of spices",
     time: "45 mins",

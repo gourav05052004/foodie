@@ -57,7 +57,7 @@ export default function Recipes() {
       </section>
 
       {/* Category Filter */}
-      <section className="py-8 border-b border-amber-200">
+      <section className="py-8">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap gap-4 justify-center">
             {categories.map((category) => (
