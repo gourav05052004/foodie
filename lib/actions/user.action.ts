@@ -5,11 +5,13 @@ import { connect } from "@/lib/db";
 
 // Define a User interface
 interface User {
+  clerkId: string;
+  email: string;
+  username: string;
   firstName: string;
   lastName: string;
-  email: string;
-  password: string;
-  // Add other fields as necessary
+  photo: string;
+  password?: string; // Make password optional
 }
 
 export async function createUser(user: User) {
