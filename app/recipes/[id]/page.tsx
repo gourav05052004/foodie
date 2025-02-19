@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Clock, Users, ChefHat, Utensils } from "lucide-react"
+import { GetServerSideProps } from 'next'
 
 // This would typically come from a database
 const recipeDetails = {
@@ -143,7 +144,24 @@ const recipeDetails = {
   // Add more recipes as needed
 }
 
-export default function RecipeDetail({ params }: { params: { id: string } }) {
+// Define the expected type for the page props
+interface RecipePageProps {
+  params: {
+    id: string;
+  };
+}
+
+export const getServerSideProps: GetServerSideProps<RecipePageProps> = async (context) => {
+  const { id } = context.params as { id: string };
+  // Fetch data or perform other server-side logic here
+  return {
+    props: {
+      params: { id },
+    },
+  };
+};
+
+export default function RecipeDetail({ params }: RecipePageProps) {
   const recipeId = Number(params.id); // Convert id to a number
   const recipe = recipeDetails[recipeId as keyof typeof recipeDetails]
 
